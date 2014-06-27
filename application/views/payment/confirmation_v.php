@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.form.js';?>"></script>
 <script type="text/javascript" src="<?php echo base_url().'assets/js/autoNumeric.js';?>"></script>
 <script type="text/javascript">
@@ -61,10 +62,13 @@ $('#btn').click(function(event){
 	}
 </script>
 
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 <div class="container">
   <div class="row-fluid">
     <div class="span3"></div>
     <div class="span6">
+<<<<<<< HEAD
       <form id="form" class="form-horizontal block-form post-job" method="post" enctype="multipart/form-data" action="<?php echo base_url().'payment/submitConfirmation';?>">
         <h2 class="form-signin-heading">Confirmation</h2>
         <div class="control-group">
@@ -136,6 +140,37 @@ $('#btn').click(function(event){
           <input type="hidden" name="no_payment" value="">
           <!--<input type="hidden" name="payment_id" value="<?php echo encrypt($payment->payment_id); ?>">
           <input type="hidden" name="invoice_id" value="<?php echo encrypt($invoice->invoice_id); ?>">-->
+=======
+      <form class="form-horizontal">
+        <h2 class="form-signin-heading">Confirmation</h2>
+        <div class="control-group">
+          <label class="control-label" for="payment">Payment</label>
+          <div class="controls">
+            <input type="text" id="payment" placeholder="Payment" class="span10">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="bank">From Bank</label>
+          <div class="controls">
+            <select class="span10">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="total">Total Transfer</label>
+          <div class="controls">
+            <input type="text" id="total" placeholder="total" class="span10">
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-large">Confirmation</button>
+          <button type="button" class="btn btn-large">Cancel</button>
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
         </div>
       </form>
     </div>

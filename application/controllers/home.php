@@ -1,6 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Home extends CI_Controller {
+<<<<<<< HEAD
 	
 	public function __construct() {
 		parent::__construct();
@@ -37,6 +38,11 @@ class Home extends CI_Controller {
 						'per_page' => ''
 						);
 		$this->pagination->initialize($config);
+=======
+
+	public function index() {
+		$data['main_content'] = 'home_v';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','home_v', $data);
 		$this->template->render();
 	}

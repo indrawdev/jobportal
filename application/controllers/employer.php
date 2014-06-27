@@ -2,6 +2,7 @@
 
 class Employer extends CI_Controller {
 
+<<<<<<< HEAD
 	function __construct() {
 		parent::__construct();
 		$this->load->model('active_record');
@@ -289,31 +290,75 @@ class Employer extends CI_Controller {
 			echo json_encode($data);			
 		}	
 																			
+=======
+	public function index() {
+		$data['main_content'] = 'employer/employer_v';
+		$this->template->write_view('content','employer/employer_v', $data);
+		$this->template->render();
+	}
+	
+	public function register() {
+		$data['main_content'] = 'employer/employer_reg';
+		$this->template->write_view('content','employer/employer_reg', $data);
+		$this->template->render();
+	}
+	
+	public function createEmployer() {
+	}
+	
+	public function login() {
+		$data['main_content'] = 'employer/employer_login';
+		$this->template->write_view('content','employer/employer_login', $data);
+		$this->template->render();
+	}
+	
+	public function account() {
+		$data['main_content'] = 'employer/employer_account';
+		$this->template->write_view('content','employer/employer_account', $data);
+		$this->template->render();
+	}
+	
+	public function postjob() {
+		$data['main_content'] = 'employer/post_job';
+		$this->template->write_view('content','employer/post_job', $data);
+		$this->template->render();			
+	}
+	
+	public function saveJob() {
+	
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	}
 	
 	public function joblist() {
 		$data['main_content'] = 'employer/job_list';
+<<<<<<< HEAD
 		$user_id = decrypt($this->session->userdata('user_id'));
 		$data['jobs'] = $this->active_record->msrwhere(
 								'job', array('user_id' => $user_id, 
 								'isactive' => 1), 'job_id', 'desc')->result();
 		
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','employer/job_list', $data);
 		$this->template->render();			
 	}
 	
 	public function editjob() {
 		$data['main_content'] = 'employer/edit_job';
+<<<<<<< HEAD
 		$job_id = $this->uri->segment(3);
 		$data['job'] = $this->active_record->msrwhere(
 								'job', array('job_id' => $job_id, 
 								'isactive' => 1), 'job_id')->row();
 													
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','employer/edit_job', $data);
 		$this->template->render();			
 	}
 	
 	public function updateJob() {
+<<<<<<< HEAD
 		$this->load->library('form_validation');
 		
 		$this->form_validation->set_rules('title', 'Job Title', 'trim|required');
@@ -388,20 +433,27 @@ class Employer extends CI_Controller {
 			$data['response'] = 'success';
 			echo json_encode($data);		
 		}
+=======
+	
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	}
 	
 	public function application() {
 		$data['main_content'] = 'employer/application_v';
+<<<<<<< HEAD
 		$employer_id = decrypt($this->session->userdata('employer_id'));
 		
 		$data['applications'] = $this->active_record->msrwhere(
 							'application', array('employer_id' => $employer_id, 
 							'isactive' => 1), 'application_id', 'desc')->result();
 							
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','employer/application_v', $data);
 		$this->template->render();			
 	}
 	
+<<<<<<< HEAD
 	public function viewApplication() {
 		$application_id = $this->uri->segment(3);
 		$data['application'] = $this->active_record->msrwhere(
@@ -410,6 +462,8 @@ class Employer extends CI_Controller {
 							
 	}
 	
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	public function addresumealert() {
 		$data['main_content'] = 'employer/addresume_alert';
 		$this->template->write_view('content','employer/addresume_alert', $data);
@@ -417,7 +471,10 @@ class Employer extends CI_Controller {
 	}
 			
 	public function saveResumealert() {
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	
 	}
 	
@@ -436,6 +493,7 @@ class Employer extends CI_Controller {
 	public function updateResumealert() {
 	
 	}
+<<<<<<< HEAD
 	
 	public function package() {
 		$data['main_content'] = 'package/package_employer';
@@ -522,11 +580,17 @@ class Employer extends CI_Controller {
 	public function changepassword() {
 		$data['main_content'] = 'employer/reset_pass';
 		
+=======
+		
+	public function changepassword() {
+		$data['main_content'] = 'employer/reset_pass';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','employer/reset_pass', $data);
 		$this->template->render();
 	}
 	
 	public function savePassword() {
+<<<<<<< HEAD
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('new_pass', 'New Password', 'trim|required');
 		$this->form_validation->set_rules('confirm_pass', 'Confirm Password', 'trim|required');
@@ -615,3 +679,9 @@ class Employer extends CI_Controller {
 		echo json_encode($createJson);
 	}	
 }
+=======
+	
+	}
+	
+}
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff

@@ -49,9 +49,15 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
+<<<<<<< HEAD
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
 $db['default']['database'] = 'jobportal';
+=======
+$db['default']['username'] = '';
+$db['default']['password'] = '';
+$db['default']['database'] = '';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

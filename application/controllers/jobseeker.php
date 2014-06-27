@@ -2,6 +2,7 @@
 
 class Jobseeker extends CI_Controller {
 
+<<<<<<< HEAD
 	function __construct() {
 		parent::__construct();
 		$this->load->model('active_record');
@@ -14,12 +15,15 @@ class Jobseeker extends CI_Controller {
 		}		
 	}
 	
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	public function index() {
 		$data['main_content'] = 'jobseeker/jobseeker_v';
 		$this->template->write_view('content','jobseeker/jobseeker_v', $data);
 		$this->template->render();
 	}
 	
+<<<<<<< HEAD
 	public function account() {
 		$data['main_content'] = 'jobseeker/jobseeker_account';
 		$jobseeker_id = decrypt($this->session->userdata('jobseeker_id'));
@@ -137,11 +141,38 @@ class Jobseeker extends CI_Controller {
 								'salary', 'salary_id', 
 								'asc')->result();
 								
+=======
+	public function register() {
+		$data['main_content'] = 'jobseeker/jobseeker_reg';
+		$this->template->write_view('content','jobseeker/jobseeker_reg', $data);
+		$this->template->render();
+	}
+	
+	public function createJobseeker() {
+		
+	}
+	
+	public function login() {
+		$data['main_content'] = 'jobseeker/jobseeker_login';
+		$this->template->write_view('content','jobseeker/jobseeker_login', $data);
+		$this->template->render();
+	}
+	
+	public function account() {
+		$data['main_content'] = 'jobseeker/jobseeker_account';
+		$this->template->write_view('content','jobseeker/jobseeker_account', $data);
+		$this->template->render();
+	}
+	
+	public function postresume() {
+		$data['main_content'] = 'jobseeker/post_resume';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','jobseeker/post_resume', $data);
 		$this->template->render();
 	}
 	
 	public function saveResume() {
+<<<<<<< HEAD
 		$this->load->library('form_validation');
 		
 		$this->form_validation->set_rules('title', 'Title', 'trim|required');
@@ -276,31 +307,41 @@ class Jobseeker extends CI_Controller {
 		
 		}
 		
+=======
+	
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	}
 	
 	public function resume() {
 		$data['main_content'] = 'jobseeker/resume_list';
+<<<<<<< HEAD
 		$user_id = decrypt($this->session->userdata('user_id'));
 		$data['resumes'] = $this->active_record->msrwhere(
 								'resume', array('user_id' => $user_id, 'isactive' => 1), 
 								'resume_id', 'desc')->result();
 														
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','jobseeker/resume_list', $data);
 		$this->template->render();
 	}
 	
 	public function editresume() {
 		$data['main_content'] = 'jobseeker/edit_resume';
+<<<<<<< HEAD
 		$resume_id = $this->uri->segment(3);
 		$data['resume'] = $this->active_record->msrwhere(
 								'resume', array('resume_id' => $resume_id, 
 								'isactive' => 1), 'resume_id', 'desc')->row();
 		
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','jobseeker/edit_resume', $data);
 		$this->template->render();
 	}
 	
 	public function updateResume() {
+<<<<<<< HEAD
 		$this->load->library('form_validation');
 		
 		$this->form_validation->set_rules('title', 'Title', 'trim|required');
@@ -362,16 +403,22 @@ class Jobseeker extends CI_Controller {
 			$data['response'] = 'success';
 			echo json_encode($data);		
 		}	
+=======
+	
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	}
 	
 	public function application() {
 		$data['main_content'] = 'jobseeker/application_v';
+<<<<<<< HEAD
 		$user_id = decrypt($this->session->userdata('user_id'));
 		$data['applications'] = $this->active_record->msrwhere(
 									'application', array('user_id' => $user_id, 
 									'isactive' => 1), 'application_id', 
 									'desc')->result();
 		
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','jobseeker/application_v', $data);
 		$this->template->render();			
 	}
@@ -402,6 +449,7 @@ class Jobseeker extends CI_Controller {
 	
 	}
 	
+<<<<<<< HEAD
 	public function package() {
 		$data['main_content'] = 'package/package_jobseeker';
 		$data['packages'] = $this->active_record->msrwhere(
@@ -538,6 +586,10 @@ class Jobseeker extends CI_Controller {
 							'user', array('' => ''), 
 							'user_id', 'desc')->row();*/
 		
+=======
+	public function changepassword() {
+		$data['main_content'] = 'jobseeker/reset_pass';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','jobseeker/reset_pass', $data);
 		$this->template->render();
 	}
@@ -545,6 +597,7 @@ class Jobseeker extends CI_Controller {
 	public function savePassword() {
 	
 	}
+<<<<<<< HEAD
 	
 	public function testimonial() {
 		$data['main_content'] = 'testimonial/jobseeker_v';
@@ -647,4 +700,7 @@ class Jobseeker extends CI_Controller {
 			}
 		echo json_encode($createJson);
 	}
+=======
+		
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }

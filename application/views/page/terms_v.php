@@ -1,5 +1,6 @@
 <div class="container">
 	<div class="row-fluid">
+<<<<<<< HEAD
 		<div class="span12">
 <h2>Syarat dan Ketentuan</h2>
 
@@ -150,6 +151,13 @@
     <p>yurisdiksi</p>
 
     <p>Pengguna mengakses Website di suatu yurisdiksi selain dari Indonesia harus mempertimbangkan apakah penggunaan pengguna tersebut ' sesuai dengan hukum yurisdiksi tersebut , sampai-sampai mereka berlaku .</p>        
+=======
+    	<div class="span3"></div>
+        <div class="span9">
+        	<ol>
+            	<li>Lorem Ipsmum</li>
+            </ol>
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
         </div>
     </div>
 </div>

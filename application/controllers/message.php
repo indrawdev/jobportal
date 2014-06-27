@@ -2,6 +2,7 @@
 
 class Message extends CI_Controller {
 
+<<<<<<< HEAD
 	function __construct() {
 		parent::__construct();
 		$this->load->model('active_record');
@@ -21,10 +22,15 @@ class Message extends CI_Controller {
 									'isactive' => 1), 'message_id', 
 									'desc')->result();
 									
+=======
+	public function index() {
+		$data['main_content'] = 'message/list';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','message/list', $data);
 		$this->template->render();
 	}
 	
+<<<<<<< HEAD
 	public function inbox() {
 		$data['main_content'] = 'message/inbox';
 		$this->template->write_view('content','message/inbox', $data);
@@ -43,12 +49,15 @@ class Message extends CI_Controller {
 		$this->template->render();
 	}
 	
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	public function reply() {
 		$data['main_content'] = 'message/reply';
 		$this->template->write_view('content','message/reply', $data);
 		$this->template->render();
 	}	
 	
+<<<<<<< HEAD
 	/*public function edit() {
 		$data['main_content'] = 'message/edit';
 		$this->template->write_view('content', 'message/edit', $data);
@@ -185,6 +194,23 @@ class Message extends CI_Controller {
 		$this->active_record->edit($table, $set, 'message_id', $message_id);
 		$data['response'] = 'success';
 		echo json_encode($data);
+=======
+	
+	public function privatemessage() {
+		
+	}
+	
+	public function sendMessage() {
+	
+	}
+	
+	public function replyMessage() {
+	
+	}
+	
+	public function deleteMessage() {
+	
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	}
 
 }

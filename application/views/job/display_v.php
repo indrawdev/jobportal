@@ -55,7 +55,11 @@
           <img src="<?php echo base_url();?>assets/images/ba2.gif" alt=""/> <br />
           </a> </div>
         <div class="span12"> <br />
+<<<<<<< HEAD
           <a class="btn btn-success btn-large btn-block" role="button" data-toggle="modal" data-target="#apply" href="#apply">Apply Now<br />
+=======
+          <a class="btn btn-success btn-large btn-block" href="#apply">Apply Now<br />
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
           <small>(Upload Resume)</small></a> </div>
         <div class="span12"> <br />
           <ul class="nav nav-tabs nav-stacked">
@@ -80,6 +84,7 @@
     </div>
   </div>
 </div>
+<<<<<<< HEAD
 
 
 <!-- Modal -->
@@ -96,3 +101,5 @@
         <button class="btn btn-primary">Save changes</button>
     </div>
 </div>
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff

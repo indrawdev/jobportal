@@ -2,6 +2,7 @@
 
 class Payment extends CI_Controller {
 
+<<<<<<< HEAD
 	public function __construct() {
 		parent::__construct();
 		$this->load->model('active_record');
@@ -20,10 +21,15 @@ class Payment extends CI_Controller {
 								'payment', array('user_id' => $user_id, 'isactive' => 1), 
 								'payment_id', 'desc')->result();
 								
+=======
+	public function index() {
+		$data['main_content'] = 'payment/payment_v';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','payment/payment_v', $data);
 		$this->template->render();
 	}
 	
+<<<<<<< HEAD
 	public function viewPayment() {
 		$payment_id = $this->uri->segement(3);
 		$data['payment'] = $this->active_record->msrwhere(
@@ -39,10 +45,15 @@ class Payment extends CI_Controller {
 		$data['invoices'] = $this->active_record->msrwhere(
 								'invoice', array('user_id' => $user_id, 'isactive' => 1), 
 								'invoice_id', 'desc')->result();
+=======
+	public function invoice() {
+		$data['main_content'] = 'payment/invoice_v';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','payment/invoice_v', $data);
 		$this->template->render();
 	}
 	
+<<<<<<< HEAD
 	public function viewInvoice() {
 		$invoice_id = $this->uri->segment(3);
 		$user_id = $decrypt($this->session->userdata('user_id'));
@@ -154,5 +165,12 @@ class Payment extends CI_Controller {
 		}		
 		
 	}
+=======
+	public function confirmation() {
+		$data['main_content'] = 'payment/confirmation_v';
+		$this->template->write_view('content','payment/confirmation_v', $data);
+		$this->template->render();
+	}
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		
 }

@@ -2,7 +2,10 @@ body {
 	padding-top: 40px;
 	position: relative;
 	font-size: 13px;
+<<<<<<< HEAD
 	background-color: #F9F9F9;
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }
 h3 code {
 	font-size: 14px;
@@ -44,10 +47,17 @@ hr.soften {
 	margin: 70px 0;
 }
 .jumbotron {
+<<<<<<< HEAD
 	/*background: linear-gradient(45deg, #0088CC 0%, #0088FF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
 	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
 	color: #FFFFFF;
 	/*padding: 40px 0;*/
+=======
+	background: linear-gradient(45deg, #020031 0%, #6D3353 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+	color: #FFFFFF;
+	padding: 40px 0;
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	position: relative;
 	text-align: center;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
@@ -93,12 +103,20 @@ hr.soften {
 	z-index: 2;
 }
 .jumbotron:after {
+<<<<<<< HEAD
 	/*background: url("../images/job-posting.jpg") repeat scroll center center rgba(0, 0, 0, 0);*/
+=======
+	background: url("../img/bs-docs-masthead-pattern.png") repeat scroll center center rgba(0, 0, 0, 0);
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	bottom: 0;
 	content: "";
 	display: block;
 	left: 0;
+<<<<<<< HEAD
 	opacity: 1.0;
+=======
+	opacity: 0.4;
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -111,7 +129,11 @@ hr.soften {
 .masthead {
 	color: #FFFFFF;
 	margin-bottom: 0;
+<<<<<<< HEAD
 	/*padding: 70px 0 80px;*/
+=======
+	padding: 70px 0 80px;
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }
 .masthead h1 {
 	font-size: 120px;
@@ -163,9 +185,12 @@ hr.soften {
 .subhead .navbar {
 	display: none;
 }
+<<<<<<< HEAD
 .form-horizontal .control-label {
 	font-weight: bold;
 }
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 .marketing {
 	color: #5A5A5A;
 	text-align: center;
@@ -198,6 +223,7 @@ hr.soften {
 	max-height: 145px;
 }
 .footer {
+<<<<<<< HEAD
 	background-color: #060808;
 	margin-top: 40px;
 	padding: 20px 0;
@@ -219,16 +245,29 @@ hr.soften {
 .footer ul li a:hover {
     /*border-bottom: 1px solid #8D8F93;*/
     color: #E4E6E7;
+=======
+	background-color: #F5F5F5;
+	border-top: 1px solid #E5E5E5;
+	margin-top: 70px;
+	padding: 30px 0;
+	text-align: center;
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }
 .footer p {
 	color: #777777;
 	margin-bottom: 0;
 	font-size: 13px;
+<<<<<<< HEAD
 	text-align: left;
 }
 .footer-links {
 	margin: 10px 0;
 	text-align: left;
+=======
+}
+.footer-links {
+	margin: 10px 0;
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }
 .footer-links li {
 	display: inline;
@@ -609,6 +648,7 @@ form.bs-docs-example {
 	position: absolute;
 	top: auto;
 }
+<<<<<<< HEAD
 
 label span.required {
     color: #DD0000;
@@ -617,6 +657,8 @@ label span.required {
 	margin: 10px 0;
 }
 
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 @media (min-width: 1200px) {
 .bs-docs-container {
  max-width: 970px;
@@ -668,7 +710,11 @@ body {
  margin-left: -20px;
  margin-right: -20px;
  margin-top: -20px;
+<<<<<<< HEAD
  /*padding: 40px 20px;*/
+=======
+ padding: 40px 20px;
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }
 .masthead h1 {
  font-size: 90px;
@@ -703,12 +749,15 @@ body {
 .footer p {
  margin-bottom: 9px;
 }
+<<<<<<< HEAD
 .form-horizontal .control-group {
  padding-right: 10px;
 }
 .newsletter {
  padding: 20px 0;
 }
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }
 @media (max-width: 480px) {
 body {
@@ -780,6 +829,7 @@ table code {
  padding-bottom: 20px;
  padding-top: 20px;
 }
+<<<<<<< HEAD
 .form-horizontal .control-group {
  padding: 0 10px;
 }
@@ -911,6 +961,10 @@ table code {
 
 
 
+=======
+}
+
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 /* Login */
 .form-signin {
 	max-width: 300px;
@@ -960,6 +1014,7 @@ table code {
 	padding: 7px 9px;
 }
 
+<<<<<<< HEAD
 .post-resume, .post-job, .find-jobs, .search-resumes, .register, .cvupload {
 	margin-top: 40px;
 }
@@ -1112,3 +1167,8 @@ table code {
 
 /* Icon Customize */
 
+=======
+.post-resume, .post-job, .find-jobs, .search-resumes {
+	margin-top: 40px;
+}
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff

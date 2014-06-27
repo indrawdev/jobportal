@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script type="text/javascript" src="<?php echo root().'assets/js/jquery.form.js';?>"></script>
 <script type="text/javascript">
 $(document).ready(function () {
@@ -113,5 +114,10 @@ $(document).ready(function () {
                </div>
             </div>
             </form>
+=======
+<div class="container">
+	<div class="row-fluid">
+    	
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
     </div>
 </div>

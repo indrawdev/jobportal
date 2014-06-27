@@ -2,6 +2,7 @@
 
 class Contact extends CI_Controller {
 
+<<<<<<< HEAD
 	public function __construct() {
 		parent::__construct();
 		$this->load->model('active_record');
@@ -144,4 +145,11 @@ class Contact extends CI_Controller {
 		
 	}
 
+=======
+	public function index() {
+		$data['main_content'] = 'contact_v';
+		$this->template->write_view('content','contact_v', $data);
+		$this->template->render();
+	}
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.form.js';?>"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -75,6 +76,38 @@ $('#btn').click(function(event){
       <button id="btn" type="submit" class="btn btn-warning btn-large">Choose Package</button>
       <button type="button" class="btn btn-large">Cancel</button>
     </div>
+=======
+<div class="container">
+  <form class="form-horizontal">
+  <fieldset>
+    <div class="row-fluid">
+      <div class="span6">
+      	<legend>Select a Package</legend>
+        <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        <p>FREE (3 Job Postings)</p>
+        </label>
+        <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        <p>REGULAR (Resume Access + 10 Job Postings + Verified Account)</p>
+        </label>
+        <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        <p>PRIORITY (Resume Access + 20 Job Postings + Verified Account)</p>
+        </label>
+      </div>
+      <div class="span6"> 
+      	<legend>Information Package</legend>
+        	<p>1. Package 1</p>
+            <p>2. Package 2</p>
+            <p>3. Package 3</p>
+      </div>
+    </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-large">Choose Package</button>
+        <button type="button" class="btn btn-large">Cancel</button>
+      </div>
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
     </fieldset>
   </form>
 </div>

@@ -2,6 +2,7 @@
 	
 class Upload_mod extends CI_Model {
 	
+<<<<<<< HEAD
 	function __construct() {
 		parent::__construct();
 		$this->load->library('upload');
@@ -73,4 +74,15 @@ class Upload_mod extends CI_Model {
 		}
 	}
 	
+=======
+
+	public function uploadImage() {
+	
+	}
+	
+	public function uploadCV() {
+	
+	}
+
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }

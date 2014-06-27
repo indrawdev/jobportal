@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.form.js';?>"></script>
 <!--<script type="application/javascript">
 $(document).ready(function() {
@@ -101,17 +102,28 @@ $(document).ready(function() {
     	<div class="span12">
         <div id="list">
             <table id="table" class="table table-bordered table-striped">
+=======
+<div class="container post-resume">
+	<div class="row">
+    	<div class="span12">
+            <table class="table table-bordered table-striped">
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
               <thead>
                 <tr>
                   <th>ID</th>
                   <th>Date</th>
                   <th>Description</th>
+<<<<<<< HEAD
                   <th>Total</th>
+=======
+                  <th>Amount</th>
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
                   <th>Status</th>
                   <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
+<<<<<<< HEAD
               <?php foreach($payments as $payment) : ?>
                 <tr>
                   <td><?php echo $payment->no_payment; ?></td>
@@ -148,3 +160,20 @@ $(document).ready(function() {
    		</div>
     </div>
 </div>-->
+=======
+                <tr>
+                  <td>1234567</td>
+                  <td>02 Feb 2014</td>
+                  <td>REGULAR (Resume Access + 10 Job Postings + Verified Account)</td>
+                  <td>Rp. 150.000</td>
+                  <td><span class="label label-warning">Pending</span></td>
+                  <td>
+                  	<a href="#" class="btn btn-primary disabled">Confirmation</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>   
+        </div>
+    </div>
+</div>
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff

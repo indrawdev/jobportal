@@ -126,7 +126,11 @@ $config['subclass_prefix'] = 'MY_';
 | DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!
 |
 */
+<<<<<<< HEAD
 $config['permitted_uri_chars'] = 'a-z 0-9~%.:;_\-';
+=======
+$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 
 
 /*
@@ -224,7 +228,11 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
+<<<<<<< HEAD
 $config['encryption_key'] = 'rKjH1g7GZPVj4CaZx1RjAL5xKFFNUVx8';
+=======
+$config['encryption_key'] = 'abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 
 /*
 |--------------------------------------------------------------------------
@@ -248,7 +256,11 @@ $config['sess_cookie_name']		= 'ci_session';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= FALSE;
+<<<<<<< HEAD
 $config['sess_use_database']	= TRUE;
+=======
+$config['sess_use_database']	= FALSE;
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 $config['sess_table_name']		= 'ci_sessions';
 $config['sess_match_ip']		= FALSE;
 $config['sess_match_useragent']	= TRUE;
@@ -328,7 +340,11 @@ $config['compress_output'] = FALSE;
 | regarding date handling.
 |
 */
+<<<<<<< HEAD
 $config['time_reference'] = 'Asia/Jakarta';
+=======
+$config['time_reference'] = 'local';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 
 
 /*

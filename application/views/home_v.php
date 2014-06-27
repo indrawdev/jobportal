@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script type="text/javascript">
 $(document).ready( function() {
 		$('#btn_subscribe').click(function(event) {
@@ -41,6 +42,8 @@ $(document).ready( function() {
         <div class="item"><img src="<?php echo base_url().'assets/images/cv-online.jpg';?>" /></div>
     </div>
 </div>
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 <div class="container">
 <div class="row-fluid">
 	<div class="span9 offset1">
@@ -59,6 +62,7 @@ $(document).ready( function() {
                     	<input class="span12 search_input" type="text" placeholder="What type of job are you looking for?">
                     </div>
                     <div class="span4">
+<<<<<<< HEAD
                     	<select class="home_select" name="city">
                         	<option value=""> --- Select City --- </option>
                         	<?php foreach($cities as $city) {
@@ -66,6 +70,11 @@ $(document).ready( function() {
 									echo '>'.$city->name.'</option>';
 								}
 							?>
+=======
+                    	<select class="home_select">
+                            <option value="0">London</option>
+                            <option value="0">Paris</option>
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
                         </select>
                     </div>
                     <div class="span2">
@@ -83,7 +92,11 @@ $(document).ready( function() {
   <div class="row-fluid">
     <div class="span9">
       <div class="row-fluid">
+<<<<<<< HEAD
         <div class="span12 block-wrapper">
+=======
+        <div class="span12">
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
           <h2>Featured jobs</h2>
           <table class="table table-striped">
             <tbody>
@@ -136,6 +149,7 @@ $(document).ready( function() {
               </tr>
             </tbody>
           </table>
+<<<<<<< HEAD
             <div class="pagination">
                 <ul>
                     <li><a href="#">Prev</a></li>
@@ -152,6 +166,12 @@ $(document).ready( function() {
       <br />
       <div class="row-fluid">
         <div class="span12 block-wrapper">
+=======
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span12">
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
           <h2>Latest jobs</h2>
           <table class="table table-striped">
             <tbody>
@@ -212,6 +232,7 @@ $(document).ready( function() {
               </tr>
             </tbody>
           </table>
+<<<<<<< HEAD
           	<div class="pagination">
                 <ul>
                     <li><a href="#">Prev</a></li>
@@ -223,6 +244,8 @@ $(document).ready( function() {
                     <li><a href="#">Next</a></li>
                 </ul>
             </div>
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
         </div>
       </div>
     </div>
@@ -230,12 +253,17 @@ $(document).ready( function() {
       <div class="row-fluid">
         <div class="span12">
           <h2></h2>
+<<<<<<< HEAD
           <a class="btn btn-primary btn-large btn-block" href="<?php echo base_url().'employer/postjob'; ?>">Post a Job<br />
+=======
+          <a class="btn btn-primary btn-large btn-block" href="#">Post a Job<br />
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
           <small>(It's Free!)</small></a> </div>
       </div>
       <br />
       <h2>Browse jobs</h2>
       <div class="row-fluid">
+<<<<<<< HEAD
         <div class="span12 block-wrapper">
           <select class="span12" id="category" name="category">
           	<option value=""> --- Select Category --- </option>
@@ -266,6 +294,60 @@ $(document).ready( function() {
           </select>
           <select class="span12" id="posted" name="posted">
            	<option > --- Select Posted --- </option>
+=======
+        <div class="span12">
+          <select class="span12" id="job_term_cat" name="job_term_cat">
+            <option value="">Job category...</option>
+            <option value="38" class="level-0">Automotive</option>
+            <option value="43" class="level-1">&nbsp;&nbsp;&nbsp;Electrical</option>
+            <option value="40" class="level-1">&nbsp;&nbsp;&nbsp;Inspection</option>
+            <option value="41" class="level-1">&nbsp;&nbsp;&nbsp;Painting</option>
+            <option value="39" class="level-1">&nbsp;&nbsp;&nbsp;Service</option>
+            <option value="42" class="level-1">&nbsp;&nbsp;&nbsp;Upholstry</option>
+            <option value="20" class="level-0">Construction</option>
+            <option value="29" class="level-1">&nbsp;&nbsp;&nbsp;Carpenter</option>
+            <option value="44" class="level-1">&nbsp;&nbsp;&nbsp;Electrician</option>
+            <option value="34" class="level-1">&nbsp;&nbsp;&nbsp;Flooring</option>
+            <option value="36" class="level-1">&nbsp;&nbsp;&nbsp;Foundation Repair</option>
+            <option value="33" class="level-1">&nbsp;&nbsp;&nbsp;General Maintence</option>
+            <option value="37" class="level-1">&nbsp;&nbsp;&nbsp;Inspections</option>
+            <option value="35" class="level-1">&nbsp;&nbsp;&nbsp;Insulation</option>
+            <option value="31" class="level-1">&nbsp;&nbsp;&nbsp;Mason</option>
+            <option value="32" class="level-1">&nbsp;&nbsp;&nbsp;Painter</option>
+            <option value="30" class="level-1">&nbsp;&nbsp;&nbsp;Plumber</option>
+            <option value="50" class="level-0">Fashion</option>
+            <option value="23" class="level-0">Food Service</option>
+            <option value="24" class="level-1">&nbsp;&nbsp;&nbsp;Bartender</option>
+            <option value="28" class="level-1">&nbsp;&nbsp;&nbsp;Cook</option>
+            <option value="25" class="level-1">&nbsp;&nbsp;&nbsp;Hosting</option>
+            <option value="26" class="level-1">&nbsp;&nbsp;&nbsp;Waiter</option>
+            <option value="21" class="level-0">Insurance</option>
+            <option value="22" class="level-0">Realtors</option>
+            <option value="19" class="level-0">Technology</option>
+            <option value="45" class="level-1">&nbsp;&nbsp;&nbsp;Engineering</option>
+            <option value="46" class="level-1">&nbsp;&nbsp;&nbsp;Programming</option>
+            <option value="47" class="level-1">&nbsp;&nbsp;&nbsp;Sys Admin</option>
+          </select>
+          <select id="job_type" name="job_type" class="span12" >
+            <option>Job type...</option>
+            <option>&nbsp;&nbsp;&nbsp;Freelance</option>
+            <option>&nbsp;&nbsp;&nbsp;Full-Time</option>
+            <option>&nbsp;&nbsp;&nbsp;Internship</option>
+            <option>&nbsp;&nbsp;&nbsp;Part-Time</option>
+            <option>&nbsp;&nbsp;&nbsp;Temporary</option>
+          </select>
+          <select class="span12" id="job_term_salary" name="job_term_salary">
+            <option value="">Job salary...</option>
+            <option value="9" class="level-0">&nbsp;&nbsp;&nbsp;Less than 20,000</option>
+            <option value="10" class="level-0">&nbsp;&nbsp;&nbsp;20,000 &ndash; 40,000</option>
+            <option value="11" class="level-0">&nbsp;&nbsp;&nbsp;40,000 &ndash; 60,000</option>
+            <option value="12" class="level-0">&nbsp;&nbsp;&nbsp;60,000 &ndash; 80,000</option>
+            <option value="13" class="level-0">&nbsp;&nbsp;&nbsp;80,000 &ndash; 100,000</option>
+            <option value="14" class="level-0">&nbsp;&nbsp;&nbsp;100,000 and above</option>
+          </select>
+          <select class="span12" id="job_term_salary2" name="job_term_salary2">
+            <option value="">Date posted...</option>
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
             <option value="">Today</option>
             <option value="">This week</option>
             <option value="">Last week</option>
@@ -275,6 +357,7 @@ $(document).ready( function() {
       </div>
     </div>
   </div>
+<<<<<<< HEAD
   <div class="row-fluid">
   	<div class="container">
     	<div class="social_stuff">
@@ -328,4 +411,6 @@ $(document).ready( function() {
   	<!-- company logo -->
   </div>
   
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 </div>

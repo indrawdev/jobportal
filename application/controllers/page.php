@@ -7,6 +7,7 @@ class Page extends CI_Controller {
 		$this->template->write_view('content','page/about_v', $data);
 		$this->template->render();
 	}
+<<<<<<< HEAD
 	
 	public function faq() {
 		$data['main_content'] = 'page/faq_v';
@@ -29,10 +30,18 @@ class Page extends CI_Controller {
 		$this->template->render();
 	}
 	
+=======
+	public function terms() {
+		$data['main_content'] = 'page/terms_v';
+		$this->template->write_view('content','page/terms_v', $data);
+		$this->template->render();
+	}
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	public function privacy() {
 		$data['main_content'] = 'page/privacy_v';
 		$this->template->write_view('content','page/privacy_v', $data);
 		$this->template->render();
+<<<<<<< HEAD
 	}
 		
 	public function careers() {
@@ -47,4 +56,8 @@ class Page extends CI_Controller {
 		$this->template->render();
 	}
 		
+=======
+	}	
+
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }

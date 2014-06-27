@@ -1,6 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Job extends CI_Controller {
+<<<<<<< HEAD
 	
 	public function __construct() {
 		parent::__construct();
@@ -11,22 +12,31 @@ class Job extends CI_Controller {
 	public function index() {
 		$data['main_content'] = 'job/job_v';
 		$data['jobs'] = $this->active_record->msr('job', 'job_id', 'desc')->result();
+=======
+
+	public function index() {
+		$data['main_content'] = 'job/job_v';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','job/job_v', $data);
 		$this->template->render();
 	}
 	
 	public function display() {
 		$data['main_content'] = 'job/display_v';
+<<<<<<< HEAD
 		$job_id = $this->uri->segment(3);
 		$data['job'] = $this->active_record->msrwhere(
 								'job', array('job_id' => $job_id), 
 								'job_id', 'desc')->row();
 								
+=======
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','job/display_v', $data);
 		$this->template->render();
 	}
 	
 	public function apply() {
+<<<<<<< HEAD
 	
 		if($this->session->userdata('login') == TRUE && $this->session->userdata('level_id') == 2) {
 			$data['main_content'] = 'job/apply_v';
@@ -213,4 +223,18 @@ class Job extends CI_Controller {
 			echo json_encode($data);		
 		}				
 	}		
+=======
+		$data['main_content'] = 'job/apply_v';
+		$this->template->write_view('content','job/apply_v', $data);
+		$this->template->render();
+	}
+	
+	public function sendResume() {
+	
+	}
+	
+	public function saveJob() {
+	
+	}	
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }

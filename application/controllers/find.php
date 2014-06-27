@@ -2,6 +2,7 @@
 
 class Find extends CI_Controller {
 
+<<<<<<< HEAD
 	public function __construct() {
 		parent::__construct();
 		$this->load->model('active_record');
@@ -31,10 +32,15 @@ class Find extends CI_Controller {
 								'city', 'city_id', 
 								'asc')->result();
 								
+=======
+	public function index() {
+		$data['main_content'] = 'find_v';
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 		$this->template->write_view('content','find_v', $data);
 		$this->template->render();
 	}
 	
+<<<<<<< HEAD
 	public function searchJobByLocation() {
 		$title = $this->input->post('title');
 		$location = $this->input->post('city');
@@ -53,4 +59,9 @@ class Find extends CI_Controller {
 		$this->template->render();
 	}
 		
+=======
+	public function results() {
+	
+	}
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 }

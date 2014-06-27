@@ -2,6 +2,7 @@
 	
 class Email_mod extends CI_Model {
 	
+<<<<<<< HEAD
 	
 	public function sendEmail($from, $to, $subject, $content) {
 		
@@ -112,6 +113,11 @@ class Email_mod extends CI_Model {
 		else {
 			return false;
 		}	
+=======
+	public function sendEmail() {
+	
+	
+>>>>>>> 31ee3d139fbb0c2633ae4d66276a4d8f2bc3bfff
 	}
 
 }
