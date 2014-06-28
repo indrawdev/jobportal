@@ -42,6 +42,6 @@
         <h2 class="form-signin-heading">Forgot Password</h2>
         <div id="message"></div>
         <input type="text" class="input-block-level" placeholder="Email address" required name="email">
-        <button id="btn" class="btn btn-large btn-primary" type="submit">Send Password</button>
+        <button id="btn" class="btn btn-large btn-warning" type="submit">Send Password</button>
     </form>
 </div>
